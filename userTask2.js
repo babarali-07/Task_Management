@@ -61,7 +61,7 @@ let rediplayData = (data) => {
             <td> ${statusVal}</td>
             <td> 
              <button  onclick="changeStatus(this ,'${i}')" id="editBtn">${editButtonName}</button>
-             <button onclick="deleteData(${i} , this)" id="deleteBtn">delete</button>
+             <button onclick="deleteData('${data[i].id}')" id="deleteBtn">delete</button>
             
             </td>
         </tr>`
@@ -72,13 +72,25 @@ let rediplayData = (data) => {
 }
 
 // this fun delete data
-function deleteData(index, dbtn) {
-    // let parent = dbtn.parentElement.parentElement
-    // parent.remove()    
-    // console.log(index);
-    allUserData.splice(index, 1)
-    savetoLoSt(allUserData)
-    rediplayData(allUserData)
+function deleteData(taskID) {
+
+    console.log(taskID);
+
+    allUserData.forEach((task, index) => {
+        if (task.id === taskID) {
+            console.log(task);
+            allUserData.splice(index, 1)
+        }
+    });
+
+    savetoLoSt(allUserData);
+    rediplayData(allUserData);
+    // // let parent = dbtn.parentElement.parentElement
+    // // parent.remove()    
+    // // console.log(index);
+    // allUserData.splice(index, 1)
+    // savetoLoSt(allUserData)
+    // rediplayData(allUserData)
 
 }
 
