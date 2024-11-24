@@ -41,6 +41,7 @@ function uuidv4() {
         });
 }
 
+console.log("this is testing commit")
 function displayData() {
     let tdData = ""
     taskTitles.forEach((obj, i) => {
@@ -83,7 +84,7 @@ function changeStatus(id) {
         let userId = obj.id
 
         if (id === userId) {
-           
+
             if (obj.status != true) {
                 alert("you want to compelete task")
             }
@@ -94,6 +95,6 @@ function changeStatus(id) {
             saveLocalSto(taskTitles);
         }
     })
-     
+
 
 }
