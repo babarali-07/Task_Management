@@ -1,0 +1,135 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    width: 90vw;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.searchContainer {
+    width: 40vw;
+    align-items: end;
+    gap: 1rem;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    align-items: first baseline;
+
+}
+
+.statusBtn {
+    padding: 7px 5px;
+    background-color: deepskyblue;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+}
+
+.titleInp {
+    border: none;
+    border-bottom: 2px solid gray;
+    outline: none;
+    padding-left: 5px;
+    font-size: 18px;
+    color: grey;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+    width: 35vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: first baseline;
+    background-color: rgba(171, 206, 161, 0.35);
+    padding: 8px 10px;
+    border-radius: 5px;
+    color: gray;
+}
+
+#addTask {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    background-color: deepskyblue;
+    color: white;
+}
+
+#addTask:hover,
+.statusBtn:hover,
+#editBtn:hover {
+    background-color: black;
+
+}
+
+#titleInp {
+    padding: 10px 15px;
+    border-radius: 4px;
+    border: none;
+    font-size: 18px;
+    color: gray;
+    outline: none;
+    width: 60%;
+}
+
+table {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+thead tr th {
+    border: 1px solid gray;
+    padding: 6px;
+    padding-bottom: 1px;
+}
+
+tbody td {
+    padding-bottom: 2px;
+    border: 1px solid gray;
+    border-top: none;
+}
+
+tbody td button {
+    padding: 4px 15px;
+    margin-left: 10px;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+#deleteBtn {
+    background-color: rgb(250, 49, 49);
+    font-size: 16px;
+
+}
+
+#deleteBtn:hover {
+    background-color: red;
+}
+
+#editBtn {
+    background-color: deepskyblue;
+    width: 8rem;
+    font-size: 16px;
+}
+
+#msg {
+    color: red;
+    margin-top: 6px;
+    font-size: 17px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

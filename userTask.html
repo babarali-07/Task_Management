@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="userTask.css">
+    <title>User Task</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="left">
+            <div class="header" id="add">
+                <textarea type="text" placeholder="Enter title..." id="titleInp"></textarea>
+                <button id="addTask">
+                    Add Task
+                </button>
+            </div>
+            <div id="msg"></div>
+        </div>
+        <div class="searchContainer">
+            <input onkeyup="searchOnTitle()" type="text" placeholder="search" class="titleInp" id="srchTitle">
+            <input type="button" value="All " class="statusBtn" id="srchAll">
+            <input type="button" value="Complete" class="statusBtn" id="srchComplete">
+            <input type="button" value="Pending" class="statusBtn" id="srchPending">
+        </div>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <!-- <th>Sr No.</th> -->
+                <th>Title</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        <tbody id="tableBody">
+
+        </tbody>
+        </thead>
+    </table>
+    <script src="userTask2.js"></script>
+</body>
+
+</html>
